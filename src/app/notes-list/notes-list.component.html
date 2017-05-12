@@ -1,0 +1,8 @@
+<div class="notes">
+  <note
+    *ngFor="let note of notes; let i = index"
+    [note] = "note"
+    [i] = "i"
+    (onRmNote) = "rmNote( $event )"
+  ></note>
+</div>

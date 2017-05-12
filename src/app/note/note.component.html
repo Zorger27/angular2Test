@@ -1,0 +1,5 @@
+<div class="note {{note.color}}">
+  {{note.text}} <br>
+  <img class="note__close" src="assets/img/close.svg" (click)="rmNote()" alt="">
+  <color-editor (choosingColor)="changeColor( $event )" [defaultColor]="note.color"></color-editor>
+</div>

@@ -1,0 +1,9 @@
+<div class="page">
+  <img src="assets/img/loading2.gif" width="100" *ngIf="!posts" alt="">
+  <div class="posts">
+    <div class="post" *ngFor="let p of posts">
+      <h3 class="post__title">{{p.title}}</h3>
+      <p class="post__body">{{p.body}}</p>
+    </div>
+  </div>
+</div>

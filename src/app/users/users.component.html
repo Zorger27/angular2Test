@@ -1,0 +1,13 @@
+<div class="page users">
+  <img src="assets/img/loading2.gif" width="100" alt="Loading..." *ngIf="!users">
+  <div class="users_list">
+    <div class="users__row" *ngFor="let u of users">
+      <div class="users__data">{{u.name}}</div>
+      <div>
+        <button class="btn" (click)="chooseUser( u )">More</button>
+      </div>
+    </div>
+  </div>
+
+  <user-details [user]="chosenUser"></user-details>
+</div>
